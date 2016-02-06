@@ -164,9 +164,9 @@ public class HostComponent extends Thread{
 			}
 			if (removeGroup != null){
 				groups.remove(removeGroup);
+				removed.add(name[0]);
 				return;
 			}
-			removed.add(name[0]);
 		}
 		for(Group g:groups){
 			if(g.getGroupName().equals(name[0])){
